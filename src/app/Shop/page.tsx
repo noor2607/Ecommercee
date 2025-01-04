@@ -1,7 +1,7 @@
 import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 import Link from "next/link";
-import products from "../Products/[slug]/page";
+
 
 interface Product {
   product_name: string;
