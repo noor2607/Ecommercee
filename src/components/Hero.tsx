@@ -14,19 +14,19 @@ export default async function Hero() {
     "imageUrl": image.asset->url
   }`);
 
-  const homeData = data[0]; // Assuming there's only one document of type "home"
+  const homeData = data[0]; 
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between bg-gray-100 p-8 rounded-md shadow-lg">
+    <section className="flex flex-col lg:flex-row items-center justify-between  p-8 rounded-md ">
       {/* Left: Image */}
       <div className="w-full lg:w-1/2 flex justify-center">
-        <div className="relative w-90 h-80">
+        <div className="relative w-96 h-96">
           <Image
             src={homeData.imageUrl}
-            alt={homeData.heading}
+            alt={"Frgrance"}
             layout="fill"
             objectFit="cover"
-            className="rounded-md shadow-md"
+            className=" shadow-md rounded-lg"
           />
         </div>
       </div>
